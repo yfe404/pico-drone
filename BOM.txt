@@ -1,0 +1,4 @@
+- x4 10K resistor
+- x4 1N5819
+- x4 SI2302
+- 1x RP2040
