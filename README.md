@@ -2,7 +2,7 @@
 
 ## Schematics
 
-![schematics](./schematics/Schematic_pico-drone_2021-12-21.png "Schematics")
+![schematics](./schematics/schematic_pico-drone.png "Schematics")
 
 
 
