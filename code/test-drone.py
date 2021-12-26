@@ -13,9 +13,6 @@ pwm1 = PWM(Pin(3))
 pwm2 = PWM(Pin(4))      
 pwm3 = PWM(Pin(5))      
 
-_sum = 0
-samples = 0
-
 print("CONFIG CHECK...")
 assert MAX_THROTTLE > MIN_THROTTLE
 print("DONE!")
