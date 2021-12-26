@@ -15,7 +15,7 @@ def get_duty_cycle(input_pin):
             pass
         end = time.ticks_us()
         duty = end - start
-        print (str(duty))
+        return duty
     
 
 def map_value(value, from_min=1000, from_max=2000, to_min=0, to_max=65000):
@@ -28,8 +28,8 @@ def map_value(value, from_min=1000, from_max=2000, to_min=0, to_max=65000):
     if value > from_max or value < from_min:
         raise Exception("Error: value must be between from_min and from_max")
 
-    assert from_min > from_max
-    assert to_min > to_max
+    assert from_min < from_max
+    assert to_min < to_max
 
     a = (value - from_min) * (to_max - to_min)
     b = from_max - from_min
